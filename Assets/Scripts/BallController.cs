@@ -25,11 +25,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            inputVector += Vector2.right;
+            inputVector += Vector2.left;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            inputVector += Vector2.left;
+            inputVector += Vector2.right;
         }
         Debug.Log("Resultant Vector = " + inputVector);
         //each frame we get a 2D vector representing the current inputs
