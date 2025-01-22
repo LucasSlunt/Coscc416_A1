@@ -23,7 +23,9 @@ public class jump : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        isInAir = false;
-        Debug.Log("collision detected");
+        if (collision.gameObject.tag == "floor")
+        {
+            isInAir = false;
+        }
     }
 }
