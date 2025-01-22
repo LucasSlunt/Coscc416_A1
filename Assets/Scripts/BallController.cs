@@ -31,7 +31,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {
             inputVector += Vector2.right;
         }
-        Debug.Log("Resultant Vector = " + inputVector);
+        
         //each frame we get a 2D vector representing the current inputs
         //we want a 3D vector so we can apply it to our 3D object
         Vector3 inputXZPlane = new Vector3(inputVector.x, 0, inputVector.y);
@@ -39,5 +39,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
         sphereRigidBody.AddForce(ballSpeed*inputXZPlane);
         //you can multiply vectors in unity just like in regular math
 
+        
+
     }
+
 }
